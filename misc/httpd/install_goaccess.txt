@@ -1,0 +1,22 @@
+cd /opt
+
+  wget http://downloads.sourceforge.net/project/goaccess/0.6.1/goaccess-0.6.1.tar.gz
+
+  tar -xzvf goaccess-0.6.1.tar.gz
+
+  cd goaccess-0.6.1
+
+  yum install ncurses-devel glib2-devel geoip
+
+  yum install gcc
+
+  yum install GeoIP-devel
+
+  ./configure --enable-geoip --enable-utf8
+
+  make 
+
+  make install
+
+
+
